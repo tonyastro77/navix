@@ -36,8 +36,8 @@ const Found = (props) => {
   }, []);
 
   getPlaces = () => {
-    const url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+ location + '&radius=3500&key=AIzaSyB3sUNJQ_5BybTAQBHHf8R-sGy7xb-OTVE&type=' + params.keyword1
-    //  // https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=60.294411,25.040070&destinations=60.180135,24.911813&key=AIzaSyB3sUNJQ_5BybTAQBHHf8R-sGy7xb-OTVE
+    const url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+ location + '&radius=3500&key=key&type=' + params.keyword1
+   
     fetch(url)
   	.then((response) => response.json()) 
   	.then((responseData) => {
